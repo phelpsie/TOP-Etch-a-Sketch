@@ -48,3 +48,9 @@ function createGrid() {
     function setBackgroundColor() {
         this.style.backgroundColor = "black";
     }
+
+    function removeGrid() {
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+    }
